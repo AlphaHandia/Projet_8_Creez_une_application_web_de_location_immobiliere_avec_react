@@ -1,0 +1,49 @@
+.displayHome {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0px 60px 0px 60px;
+  border-radius: 25px;
+}
+
+.HomeFrontPicture {
+  height: 223px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  border-radius: 25px;
+}
+
+.displayHomeFront {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.displayHomeFront p {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+  bottom: 240px;
+  opacity: 30%;
+  background: black;
+  height: 223px;
+  border-radius: 25px;
+}
+
+.displayHomeFront h1 {
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 48px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  bottom: 395px;
+  margin: auto;
+  border-radius: 25px;
+}/*# sourceMappingURL=Home.css.map */

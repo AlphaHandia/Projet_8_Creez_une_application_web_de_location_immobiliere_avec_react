@@ -1,7 +1,239 @@
+@charset "UTF-8";
 .StyledLink {
   padding: 10px 15px;
   color: #FF6060;
   text-decoration: none;
   font-size: 18px;
   text-align: center;
+  text-decoration: none;
+}
+
+.HomeLogo {
+  height: 68px;
+}
+
+.NavContainer {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 60px 0px 60px;
+  text-decoration: underline;
+}
+
+.FooterContainer {
+  background-color: #000000;
+  color: #FFFFFF;
+  height: 209px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.CardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 40px;
+  box-sizing: border-box;
+  justify-content: space-around;
+  row-gap: 40px;
+  border-radius: 25px;
+  background: #f6f6f6;
+  position: relative;
+  z-index: 0;
+  margin: -245px 0px 30px 0px;
+}
+
+.CardContent {
+  display: flex;
+  text-decoration: none;
+  width: 340px;
+  color: white;
+  height: 340px;
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: transform 0.2s;
+  align-items: end;
+}
+
+.CardContent p {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  font-weight: 600;
+  padding: 2px;
+  margin-left: 3px;
+  border-radius: 7.5px;
+  background: linear-gradient(180deg, rgba(255, 96, 96, 0.6) 90%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.CardContent:hover {
+  transform: scale(1.05);
+}
+
+.CardImageContainer {
+  position: relative;
+}
+
+.CardImage {
+  width: 340px;
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.DropDown {
+  background: rgb(255, 96, 96);
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 15px;
+  margin: 30px 0px 30px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.DropDown i.fa-solid.fa-chevron-up {
+  transition: transform 0.5s ease;
+  transform: rotate(0deg);
+}
+.DropDown.active i.fa-solid.fa-chevron-up {
+  transform: rotate(-180deg);
+}
+
+.DropDownContent {
+  display: none;
+  background-color: #f1f1f1;
+  margin: -1px 0px 0px 0px;
+  padding: 0px 15px 0px 15px;
+}
+
+.DropDownContent.active {
+  display: block;
+}
+
+/* slideshow.scss */
+/* Styles pour le conteneur du carrousel */
+.slideshow-container {
+  position: relative;
+}
+
+/* Styles pour le bouton de flèche gauche */
+.button-prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* Styles pour le bouton de flèche droite */
+.button-next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* Styles pour les numéros d'image */
+.image-numbers {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Styles pour les images du carrousel */
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.ErrorWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  margin: 0px 40px 80px 40px;
+  text-align: center;
+  color: #FF6060;
+}
+
+.ErrorTitle {
+  font-size: 288px;
+  margin: 0px;
+  font-weight: 700;
+  line-height: 411px;
+  letter-spacing: 0em;
+}
+
+.ErrorSubtitle {
+  font-weight: 500;
+  color: #FF6060;
+  font-size: 36px;
+}
+
+.ErrorLink {
+  color: #FF6060;
+}
+
+.displayHome {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0px 60px 0px 60px;
+  border-radius: 25px;
+}
+
+.HomeFrontPicture {
+  height: 223px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  border-radius: 25px;
+}
+
+.displayHomeFront {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.displayHomeFront p {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+  bottom: 240px;
+  opacity: 30%;
+  background: black;
+  height: 223px;
+  border-radius: 25px;
+}
+
+.displayHomeFront h1 {
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 48px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  bottom: 395px;
+  margin: auto;
+  border-radius: 25px;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=main.css.map */

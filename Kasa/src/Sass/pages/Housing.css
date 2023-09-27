@@ -1,0 +1,15 @@
+.housing-container {
+  margin: 10px 60px 30px 60px;
+  color: #FF6060;
+}
+
+.display-housingcontent {
+  width: 100%;
+}
+
+.housingcontenttags {
+  background: #FF6060;
+  color: white;
+  border-radius: 10px;
+  padding: 2px;
+}/*# sourceMappingURL=Housing.css.map */

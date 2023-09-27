@@ -1,0 +1,30 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.ErrorWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  margin: 0px 40px 80px 40px;
+  text-align: center;
+  color: #FF6060;
+}
+
+.ErrorTitle {
+  font-size: 288px;
+  margin: 0px;
+  font-weight: 700;
+  line-height: 411px;
+  letter-spacing: 0em;
+}
+
+.ErrorSubtitle {
+  font-weight: 500;
+  color: #FF6060;
+  font-size: 36px;
+}
+
+.ErrorLink {
+  color: #FF6060;
+}/*# sourceMappingURL=Error.css.map */

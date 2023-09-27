@@ -1,0 +1,36 @@
+.DropDown {
+  background: rgb(255, 96, 96);
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 15px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.DropDown i.fa-solid.fa-chevron-up {
+  transition: transform 0.5s ease;
+  transform: rotate(0deg);
+}
+.DropDown.active i.fa-solid.fa-chevron-up {
+  transform: rotate(-180deg);
+}
+
+.DropDownContent {
+  display: none;
+  background-color: #f1f1f1;
+  margin: -1px 0px 0px 0px;
+  padding: 0px 15px 0px 15px;
+}
+
+.DropDownContent.active {
+  display: block;
+}
+
+.DisplayDropDown {
+  padding: 0px 100px 30px 100px;
+}/*# sourceMappingURL=DropDown.css.map */

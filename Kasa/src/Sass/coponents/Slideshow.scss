@@ -1,0 +1,41 @@
+
+/* Styles pour le conteneur du carrousel */
+.slideshow-container {
+    position: relative;
+    border-radius: 50px;
+  }
+  
+  /* Styles pour le bouton de flèche gauche */
+  .button-prev {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    z-index: 2;
+    border: none;
+    background: none;
+  }
+  
+  /* Styles pour le bouton de flèche droite */
+  .button-next {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    z-index: 2;
+    border: none;
+    background: none;
+  }
+  
+  /* Styles pour les numéros d'image */
+  .image-numbers {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .carousel-slider {
+    border-radius: 10px;
+  }
+  
+  /* Styles pour les images du carrousel */
+
+  

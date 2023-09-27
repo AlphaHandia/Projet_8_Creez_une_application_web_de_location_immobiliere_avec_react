@@ -1,0 +1,1 @@
+{"version":3,"sources":["../Base/Tipography.scss","Error.css","Error.scss","../utils/style/color.scss"],"names":[],"mappings":"AAAA;EACI,qCAAA;ACCJ;;ACAA;EACE,aAAA;EACA,sBAAA;EACA,SAAA;EACF,0BAAA;EACE,kBAAA;EACA,cCRa;AFWf;;ACDA;EAEE,gBAAA;EAEF,WAAA;EACE,gBAAA;EACA,kBAAA;EACA,mBAAA;ADEF;;ACAA;EACE,gBAAA;EACA,cCrBa;EDsBf,eAAA;ADGA;;ACDA;EACE,cCzBa;AF6Bf","file":"Error.css"}

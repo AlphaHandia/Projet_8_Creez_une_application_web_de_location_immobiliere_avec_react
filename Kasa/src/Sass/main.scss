@@ -1,2 +1,14 @@
-@import "Utils/style/styled-link.scss";
+@import "Utils/style/styled-link";
+@import "Utils/style/color.scss";
 
+@import "coponents/Header.scss";
+@import "coponents/Footer.scss";
+@import "coponents/Cards.scss";
+@import "coponents/DropDown.scss";
+@import "coponents/Slideshow.scss";
+
+@import "pages/Error.scss";
+@import "pages/Home.scss";
+
+
+@import "Base/Tipography.scss"
