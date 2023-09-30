@@ -1,7 +1,3 @@
-.HomeLogo {
-  height: 68px;
-}
-
 .NavContainer {
   padding-bottom: 25px;
   padding-top: 25px;
@@ -10,7 +6,38 @@
   align-items: center;
   margin: 0px 60px 0px 60px;
 }
+@media (max-width: 530px) {
+  .NavContainer {
+    margin: 10px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 530px) {
+  .NavContainer a {
+    width: 145px;
+  }
+}
+
+@media (max-width: 530px) {
+  .NavContainer a img {
+    width: 145px;
+  }
+}
 
 .active-link {
   text-decoration: underline;
+}
+
+@media (max-width: 530px) {
+  .Navcontent {
+    font-weight: 300;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 530px) {
+  .StyledLink {
+    padding: 4px;
+  }
 }/*# sourceMappingURL=Header.css.map */

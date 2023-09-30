@@ -6,6 +6,11 @@
   margin: 0px 60px 0px 60px;
   border-radius: 25px;
 }
+@media (max-width: 530px) {
+  .displayHome {
+    margin: 0px;
+  }
+}
 
 .HomeFrontPicture {
   height: 223px;
@@ -26,11 +31,12 @@
   justify-content: center;
   z-index: 2;
   position: relative;
-  bottom: 240px;
+  bottom: 223px;
   opacity: 30%;
   background: black;
   height: 223px;
   border-radius: 25px;
+  margin: 0px;
 }
 
 .displayHomeFront h1 {
@@ -39,11 +45,23 @@
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  font-size: 48px;
   width: 100%;
+  font-size: 24px;
+  padding: 0px 5px 0px 5px;
   z-index: 2;
   position: relative;
-  bottom: 395px;
+  bottom: 360px;
   margin: auto;
   border-radius: 25px;
+}
+@media (min-width: 685px) {
+  .displayHomeFront h1 {
+    width: 100%;
+    font-size: 36px;
+  }
+}
+@media (min-width: 1024px) {
+  .displayHomeFront h1 {
+    font-size: 48px;
+  }
 }/*# sourceMappingURL=Home.css.map */

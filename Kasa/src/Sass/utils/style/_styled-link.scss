@@ -1,9 +1,11 @@
- .StyledLink  {
-  padding: 10px 15px;
-  color: #FF6060;
+.StyledLink {
+  padding: 10px 0px 10px 10px;
+  color: #ff6060;
   text-decoration: none;
   font-size: 18px;
   text-align: center;
-    text-decoration: none;
+  text-decoration: none;
+  @media (min-width: 685px) {
+    padding: 10px 0px 10px 50px;
   }
-
+}

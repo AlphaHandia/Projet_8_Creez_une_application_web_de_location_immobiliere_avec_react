@@ -8,23 +8,34 @@
   gap: 45px;
   margin: 0px 40px 80px 40px;
   text-align: center;
-  color: #FF6060;
+  color: #ff6060;
 }
 
 .ErrorTitle {
   font-size: 288px;
+  width: 100%;
   margin: 0px;
   font-weight: 700;
   line-height: 411px;
   letter-spacing: 0em;
 }
+@media (max-width: 690px) {
+  .ErrorTitle {
+    font-size: 144px;
+  }
+}
+@media (max-width: 370px) {
+  .ErrorTitle {
+    font-size: 74px;
+  }
+}
 
 .ErrorSubtitle {
   font-weight: 500;
-  color: #FF6060;
+  color: #ff6060;
   font-size: 36px;
 }
 
 .ErrorLink {
-  color: #FF6060;
+  color: #ff6060;
 }/*# sourceMappingURL=Error.css.map */
