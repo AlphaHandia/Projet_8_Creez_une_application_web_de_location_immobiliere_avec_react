@@ -7,7 +7,7 @@ import "../../Sass/coponents/carousel.scss";
 
 function Carousel() {
   const { logementId } = useParams();
-  const [currentSlideIndex, setCurrentSlideIndex] = useState(0); // Utilisez le même nom de variable ici
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0); 
 
   const logement = logements.find((logement) => logement.id === logementId);
 
@@ -15,7 +15,7 @@ function Carousel() {
     if (index < 0 || index >= logement.picture.length) {
       return;
     }
-    setCurrentSlideIndex(index); // Utilisez le même nom de variable ici
+    setCurrentSlideIndex(index); 
   };
 
   const showArrows = logement.picture.length > 1;
