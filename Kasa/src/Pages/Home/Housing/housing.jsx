@@ -1,9 +1,13 @@
 import logements from "../../../datas/logements.json";
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import Slideshow from "../../../components/Slideshow/Slideshow";
-import '../../../Sass/pages/Housing.scss'
-import '../../../Sass/coponents/Slideshow.scss'
+import Error from "../../Error/error";
+import Carousel from "../../../components/carousel/carousel";
+import Scorerating from "../../../components/Scorerating/Scorerating";
+import Tags from "../../../components/tags/tags";
+import HostInfo from "../../../components/host/host";
+import "../../../Sass/pages/Housing.scss";
+import "../../../Sass/coponents/carousel.scss";
 
 function Housing() {
   const [expandedItems, setExpandedItems] = useState([]);
@@ -11,9 +15,8 @@ function Housing() {
 
   const logement = logements.find((logement) => logement.id === logementId);
 
-  // Vérifiez si logement est undefined
   if (!logement) {
-    return <div>Logement non trouvé</div>;
+    return <Error />;
   }
 
   const toggleItem = (index) => {
@@ -27,47 +30,58 @@ function Housing() {
   const isItemExpanded = (index) => expandedItems.includes(index);
 
   return (
-    <div className='housing-container'>
-      <Slideshow />
-
-      <div className= 'display-housingcontent'>
-        <h1>{logement.title}</h1>
-        <p>{logement.location}</p>
-        <span className="housingcontenttags" >{logement.tags}</span>
-
-        <span>
-          <p>{logement.host ? logement.host.name : ""}</p>
-          <span>{logement.rating}</span>
-        </span>
-
-        <button
-          className={`DropDown ${isItemExpanded(0) ? "active" : ""}`}
-          onClick={() => toggleItem(0)}
-        >
-          Description <i className="fa-solid fa-chevron-up"></i>
-        </button>
-        <div className={`DropDownContent ${isItemExpanded(0) ? "active" : ""}`}>
-          {logement.description}
-        </div>
-
-        <button
-          className={`DropDown ${isItemExpanded(1) ? "active" : ""}`}
-          onClick={() => toggleItem(1)}
-        >
-          Equipements <i className="fa-solid fa-chevron-up"></i>
-        </button>
-        <div className={`DropDownContent ${isItemExpanded(1) ? "active" : ""}`}>
-          {logement.equipments ? (
-            logement.equipments.map((equipment, subIndex) => (
-              <div key={subIndex}>{equipment}</div>
-            ))
-          ) : (
-            <p>Aucun équipement disponible.</p>
-          )}
-        </div>
-      </div>
-    </div>
+    <section className="housing-container">
+      <Carousel />
+      <section className="display-housingcontent">
+        <section className="display-rating">
+          <span className="order-display-rating-one">
+            <h1>{logement.title}</h1>
+            <p>{logement.location}</p>
+            <Tags tags={logement.tags} />
+          </span>
+          <span className="order-display-rating-two">
+            <HostInfo host={logement.host} />
+            <div className="ScoreRating">
+              <Scorerating />
+            </div>
+          </span>
+        </section>
+        <section className="display-content">
+          <span className="display-content-one">
+            <button
+              className={`collapse  ${isItemExpanded(0) ? "active" : ""}`}
+              onClick={() => toggleItem(0)}
+            >
+              Description <i className="fa-solid fa-chevron-up"></i>
+            </button>
+            <div
+              className={`collapseContent ${isItemExpanded(0) ? "active" : ""}`}
+            >
+              {logement.description}
+            </div>
+          </span>
+          <span className="display-content-one">
+            <button
+              className={`collapse  ${isItemExpanded(1) ? "active" : ""}`}
+              onClick={() => toggleItem(1)}
+            >
+              Equipements <i className="fa-solid fa-chevron-up"></i>
+            </button>
+            <div
+              className={`collapseContent ${isItemExpanded(1) ? "active" : ""}`}
+            >
+              {logement.equipments ? (
+                logement.equipments.map((equipment, subIndex) => (
+                  <div key={subIndex}>{equipment}</div>
+                ))
+              ) : (
+                <p>Aucun équipement disponible.</p>
+              )}
+            </div>
+          </span>
+        </section>
+      </section>
+    </section>
   );
 }
-
 export default Housing;

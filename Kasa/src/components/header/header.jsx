@@ -9,9 +9,9 @@ function Header() {
   return (
     <div className="NavContainer">
       <Link to="/">
-        <img src={Logo} className="HomeLogo" alt="logo" />
+        <img src={Logo} alt="logo" />
       </Link>
-      <div>
+      <div className="Navcontent">
         <NavLink
           to="/"
           className={`StyledLink ${

@@ -1,47 +1,67 @@
 .displayHome {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  margin: 0px 60px 0px 60px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 0px 60px 0px 60px;
+    border-radius: 25px;
+  }
+  @media (max-width: 530px) {
+    .displayHome {
+      margin: 0px;
+    }
+  }
   
-  border-radius: 25px;
-}
-
-.HomeFrontPicture {
-  height: 223px;
-  object-fit: cover;
-  display: flex;
-  border-radius: 25px;
-}
-.displayHomeFront {
-  display: inline-flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.displayHomeFront p {
-  display: flex;
-  justify-content: center;
-  z-index: 2;
-  position: relative;
-  bottom: 240px;
-  opacity: 30%;
-  background: darken($color: #000000, $amount: 0.1);
-  height: 223px;
-  border-radius: 25px;
-}
-.displayHomeFront h1 {
-  color: white;
+  .HomeFrontPicture {
+    height: 223px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: flex;
+    border-radius: 25px;
+  }
   
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 500;
-  font-size: 48px;
-  width:100%;
-  z-index: 2;
-  position: relative;
-  bottom: 395px;
-  margin: auto;
-  border-radius: 25px;
+  .displayHomeFront {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .displayHomeFront p {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+    bottom: 223px;
+    opacity: 30%;
+    background: black;
+    height: 223px;
+    border-radius: 25px;
+    margin: 0px;
+  }
+  
+  .displayHomeFront h1 {
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    width: 100%;
+    font-size: 24px;
+    padding: 0px 5px 0px 5px;
+    z-index: 2;
+    position: relative;
+    bottom: 360px;
+    margin: auto;
+    border-radius: 25px;
+  }
+  @media (min-width: 685px) {
+    .displayHomeFront h1 {
+      width: 100%;
+      font-size: 36px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .displayHomeFront h1 {
+      font-size: 48px;
+    }
 }

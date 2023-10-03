@@ -1,0 +1,45 @@
+.collapse {
+  background: rgba(255, 96, 96, 1);
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 15px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  & i.fa-solid.fa-chevron-up {
+    transition: transform 0.5s ease;
+    transform: rotate(0deg);
+  }
+  &.active i.fa-solid.fa-chevron-up {
+    transform: rotate(-180deg);
+  }
+  @media (max-width: 374px) {
+    margin-top: 10px;
+  }
+}
+.collapseContent {
+  display: none;
+  background-color: #f1f1f1;
+  margin: -1px 0px 0px 0px;
+  padding: 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.collapseContent.active {
+  display: block;
+}
+.Displaycollapse {
+  padding: 0px 100px 30px 100px;
+  color: rgba(255, 96, 96, 1);
+  @media (max-width: 530px) {
+    padding: 0px;
+  }
+}
+.collapseContainer {
+  margin-bottom: 30px;
+}
