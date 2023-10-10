@@ -4,18 +4,26 @@
   height: 415px;
   border-radius: 50px;
   margin-bottom: 25px;
-  @media (max-width: 610px) {
+}
+@media (max-width: 610px) {
+  .carousel-container {
     height: 255px;
   }
 }
+
 .carousel-container img {
   width: 100%;
   border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 415px;
-  @media (max-width: 610px) {
+}
+@media (max-width: 610px) {
+  .carousel-container img {
     height: 255px;
   }
 }
+
 .button-prev {
   width: 46px;
   height: 79px;
@@ -27,10 +35,13 @@
   border: none;
   background: none;
   cursor: pointer;
-  @media (max-width: 374px) {
+}
+@media (max-width: 374px) {
+  .button-prev {
     width: 24px;
   }
 }
+
 .button-prev img {
   width: 46px;
   height: 79px;
@@ -47,33 +58,43 @@
   border: none;
   background: none;
   cursor: pointer;
-  @media (max-width: 374px) {
+}
+@media (max-width: 374px) {
+  .button-next {
     width: 24px;
   }
 }
+
 .button-next img {
   width: 46px;
   height: 79px;
 }
+
 .image-numbers {
   text-align: center;
   margin-top: 10px;
 }
+
 .carousel-slider {
   border-radius: 10px;
 }
+
 .carousel-image {
   height: 415px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .show {
   display: block;
 }
+
 .hide {
   display: none;
 }
-.carousel .slide img {
-  @media (max-width: 374px) {
+
+@media (max-width: 374px) {
+  .carousel .slide img {
     height: 255px;
   }
-}
+}/*# sourceMappingURL=carousel.css.map */

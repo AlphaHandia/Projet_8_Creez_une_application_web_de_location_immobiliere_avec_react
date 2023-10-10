@@ -204,6 +204,8 @@
 .carousel-container img {
   width: 100%;
   border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 415px;
 }
 @media (max-width: 610px) {

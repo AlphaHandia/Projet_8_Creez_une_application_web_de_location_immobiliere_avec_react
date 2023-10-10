@@ -1,4 +1,4 @@
-import "../../Sass/coponents/Footer.scss";
+import "../../Sass/components/Footer.scss";
 import styled from "styled-components";
 import D_Footer from "../../assets/image/D_Footer.png";
 import D_Footer_2 from "../../assets/image/D_footer_2.png";

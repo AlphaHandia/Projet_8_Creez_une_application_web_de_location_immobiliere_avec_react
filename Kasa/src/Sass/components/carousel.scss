@@ -4,24 +4,19 @@
   height: 415px;
   border-radius: 50px;
   margin-bottom: 25px;
-}
-@media (max-width: 610px) {
-  .carousel-container {
+  @media (max-width: 610px) {
     height: 255px;
   }
 }
-
 .carousel-container img {
   width: 100%;
   border-radius: 50px;
+  object-fit: cover;
   height: 415px;
-}
-@media (max-width: 610px) {
-  .carousel-container img {
+  @media (max-width: 610px) {
     height: 255px;
   }
 }
-
 .button-prev {
   width: 46px;
   height: 79px;
@@ -33,13 +28,10 @@
   border: none;
   background: none;
   cursor: pointer;
-}
-@media (max-width: 374px) {
-  .button-prev {
+  @media (max-width: 374px) {
     width: 24px;
   }
 }
-
 .button-prev img {
   width: 46px;
   height: 79px;
@@ -56,43 +48,33 @@
   border: none;
   background: none;
   cursor: pointer;
-}
-@media (max-width: 374px) {
-  .button-next {
+  @media (max-width: 374px) {
     width: 24px;
   }
 }
-
 .button-next img {
   width: 46px;
   height: 79px;
 }
-
 .image-numbers {
   text-align: center;
   margin-top: 10px;
 }
-
 .carousel-slider {
   border-radius: 10px;
 }
-
 .carousel-image {
   height: 415px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-
 .show {
   display: block;
 }
-
 .hide {
   display: none;
 }
-
-@media (max-width: 374px) {
-  .carousel .slide img {
+.carousel .slide img {
+  @media (max-width: 374px) {
     height: 255px;
   }
-}/*# sourceMappingURL=carousel.css.map */
+}

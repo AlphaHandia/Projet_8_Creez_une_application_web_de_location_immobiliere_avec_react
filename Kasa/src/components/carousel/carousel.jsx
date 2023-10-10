@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import arrowRight from "../../assets/image/arrow_right.png";
 import arrowLeft from "../../assets/image/arrow_left.png";
-import "../../Sass/coponents/carousel.scss";
+import "../../Sass/components/carousel.scss";
 
 function Carousel() {
   const { logementId } = useParams();

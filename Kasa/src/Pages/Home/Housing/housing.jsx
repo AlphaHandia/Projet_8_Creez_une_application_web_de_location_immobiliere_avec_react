@@ -7,7 +7,7 @@ import Scorerating from "../../../components/Scorerating/Scorerating";
 import Tags from "../../../components/tags/tags";
 import HostInfo from "../../../components/host/host";
 import "../../../Sass/pages/Housing.scss";
-import "../../../Sass/coponents/carousel.scss";
+import "../../../Sass/components/carousel.scss";
 
 function Housing() {
   const [expandedItems, setExpandedItems] = useState([]);
