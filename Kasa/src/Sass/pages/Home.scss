@@ -24,19 +24,37 @@
     display: inline-flex;
     justify-content: center;
     flex-direction: column;
+    @media (max-width:385px) {
+      margin-bottom: -45px;
+    }
   }
   
   .displayHomeFront p {
     display: flex;
     justify-content: center;
-    z-index: 2;
+    width:100%;
     position: relative;
-    bottom: 223px;
+    bottom: 157px;
+    left:110px;
     opacity: 30%;
     background: black;
     height: 223px;
     border-radius: 25px;
-    margin: 0px;
+    margin: -110px;
+    @media (min-width: 385px) {
+      bottom:143px;
+      }
+    @media  (max-width:384px){
+      bottom:170px;
+    }
+    @media (min-width:685px){
+      bottom:157px;
+    }
+    @media (min-width:1024px){
+      bottom:170px;
+    }
+      
+    
   }
   
   .displayHomeFront h1 {
@@ -47,10 +65,10 @@
     font-weight: 500;
     width: 100%;
     font-size: 24px;
-    padding: 0px 5px 0px 5px;
+    
     z-index: 2;
     position: relative;
-    bottom: 360px;
+    bottom: 135px;
     margin: auto;
     border-radius: 25px;
   }
