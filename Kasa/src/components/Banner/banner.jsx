@@ -1,4 +1,4 @@
-import "../../Sass/pages/Home.scss"
+import "../../Sass/main.scss";
 
 function Banner({ image, text }) {
   return (

@@ -1,5 +1,5 @@
 import AproposFront from "../../assets/image/AproposFront.png";
-import "../../Sass/pages/Home.scss";
+import "../../Sass/main.scss";
 import Collapse from "../../components/Collapse/Collapse";
 import content from "../../datas/content.json";
 import Banner from "../../components/Banner/banner";

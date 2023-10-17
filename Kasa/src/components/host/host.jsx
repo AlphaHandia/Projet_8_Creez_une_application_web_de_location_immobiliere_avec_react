@@ -1,4 +1,4 @@
-import "../../Sass/pages/Housing.scss";
+import "../../Sass/main.scss";
 
 function HostInfo({ host }) {
   return (

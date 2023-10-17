@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import "../../Sass/pages/Error.scss";
-import "../../Sass/Base/Tipography.scss";
+import "../../Sass/main.scss";
 
 function Error() {
   return (

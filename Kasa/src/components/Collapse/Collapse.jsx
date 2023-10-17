@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../Sass/components/collapse.scss";
+import "../../Sass/main.scss";
 
 function Collapse({ content }) {
   const [expandedItems, setExpandedItems] = useState([]);

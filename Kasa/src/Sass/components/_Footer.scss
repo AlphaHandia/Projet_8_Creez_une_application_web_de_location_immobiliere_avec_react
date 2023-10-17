@@ -1,0 +1,32 @@
+.FooterContainer {
+  background-color: #000000;
+  color: #ffffff;
+  height: 209px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  @media(max-width:500px){
+    justify-content: center;
+  }
+  @media (min-width: 1440px) {
+    margin: 0px;
+    width: 100%;
+  }
+}
+.FooterContainer p {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 24px;
+  margin-top:60px;
+
+  @media (max-width: 500px) {
+    padding: 0px 150px;
+    margin-top:10px;
+    font-size: 12px;
+    text-align: center;
+    width:134px;
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../Sass/components/Cards.scss";
+import "../../Sass/main.scss";
 
 function Cards({ logements }) {
   return (

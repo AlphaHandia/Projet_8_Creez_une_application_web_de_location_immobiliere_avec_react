@@ -1,6 +1,6 @@
 import HomeFront from "../../assets/image/HomeFront.png";
 import Cards from "../../components/cards/cards";
-import "../../Sass/pages/Home.scss";
+import "../../Sass/main.scss";
 import logements from "../../datas/logements.json";
 import Banner from "../../components/Banner/banner";
 
