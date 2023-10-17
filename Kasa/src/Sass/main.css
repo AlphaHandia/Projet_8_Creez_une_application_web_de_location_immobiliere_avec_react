@@ -112,7 +112,7 @@
 @media (min-width: 1440px) {
   .CardContainer {
     display: grid;
-    grid: auto-flow dense/340px 340px 340px;
+    grid: auto-flow/340px 340px 340px;
   }
 }
 @media (max-width: 575px) {

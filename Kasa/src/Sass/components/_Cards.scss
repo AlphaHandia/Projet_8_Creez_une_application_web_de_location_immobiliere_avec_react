@@ -13,7 +13,7 @@
   gap:10px;
  @media (min-width:1440px){
   display: grid;
-  grid: auto-flow dense / 340px 340px 340px;
+  grid: auto-flow  / 340px 340px 340px;
  }
   @media (max-width: 575px) {
     padding: 40px 0px 0px 0px;
